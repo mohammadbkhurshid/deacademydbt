@@ -2,7 +2,7 @@
 config
 ({
 "materialized":'table',
-"pre_hook": copy_json('COUNTRY_DETAILS_CP'),  -- pre_hook means this statement will run first before any other
+"pre_hook": copy_json('COUNTRY_DETAILS_CP'),  
 "schema": 'RAW'
 })
 }}
