@@ -14,10 +14,6 @@ vars:
    target_schema: PUBLIC
    stage_name: GLUEDB.PUBLIC.GLUE_S3_STAGE
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 975fb93a225511bedea1203ba3100d96951a7817
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
