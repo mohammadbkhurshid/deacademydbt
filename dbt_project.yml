@@ -7,21 +7,28 @@ name: 'mk_dbt_workshop'
 version: '1.0.0'
 config-version: 2
 
-vars:
-   wrk_schema: BRONZE
-   file_format_json: MYDB.BRONZE.MY_CSV_FORMAT
-   purge_status: FALSE
-   stage_name: MYDB.BRONZE.SCD2_PROJECT_STAGE
-   rawhist_db: MYDB
+#vars:
+#   wrk_schema: BRONZE
+#   file_format_json: MYDB.BRONZE.MY_CSV_FORMAT
+#   purge_status: FALSE
+#   stage_name: MYDB.BRONZE.SCD2_PROJECT_STAGE
+#   rawhist_db: MYDB
 
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
 
 vars:
-   target_db: GLUEDB
-   target_schema: PUBLIC
-   stage_name: GLUEDB.PUBLIC.GLUE_S3_STAGE
+#   target_db: GLUEDB
+#   target_schema: PUBLIC
+#   stage_name: GLUEDB.PUBLIC.GLUE_S3_STAGE
+
+   wrk_schema: BRONZE
+   file_format_json: MYDB.BRONZE.MY_CSV_FORMAT
+   purge_status: FALSE
+   stage_name: MYDB.BRONZE.SCD2_PROJECT_STAGE
+   rawhist_db: MYDB
+
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
