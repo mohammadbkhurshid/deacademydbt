@@ -41,17 +41,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 # continue to be built as views. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 
-models:
+# models:
 #  my_new_project:
 #    # Applies to all files under models/example/
 #    example:
 #      +materialized: table
+models:
   mk_dbt_workshop:
-      example:
-          schema: example 
+#      example:
+#          schema: example 
      silver:
-          schema: silver
-          materialized: table
-      gold:
-          schema: gold
-          materialized: view
+       +schema: silver
+       +materialized: table
+     gold:
+       +schema: gold
+       +materialized: view
