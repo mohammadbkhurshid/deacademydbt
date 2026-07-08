@@ -7,6 +7,14 @@ name: 'mk_dbt_workshop'
 version: '1.0.0'
 config-version: 2
 
+vars:
+   wrk_schema: BRONZE
+   file_format_json: MYDB.BRONZE.MY_CSV_FORMAT
+   purge_status: FALSE
+   stage_name: MYDB.BRONZE.SCD2_PROJECT_STAGE
+   rawhist_db: MYDB
+
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
 
